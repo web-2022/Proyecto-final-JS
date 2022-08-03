@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Incorporando librerías</title>
+
+    <!-- SEO -->
+  <meta name="keywords" content="Capacitación, minería, cursos">
+  <meta name="description" content="Empresa de capacitación para potenciar tus conocimientos">
+
+
+    <!-- estilos bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Mi estilo -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Librería Sweetalert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Incorporando libreria tostify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- Icono-logo -->
+  <link rel="shortcut icon" href="./img/logo.jpg">
+
+</head>
+
+<body>
+
+
+    <div class="row container-fluid">
+
+        <!-- II. Menú agrupado -->
+        <div class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+            <!-- I. Logo -->
+            <div class="col">
+                <img class="logo" src="./img/logo.png" alt="">
+            </div>
+            <!-- II. Menú agrupado -->
+            <ul class="navbar-nav navbar-nav-scroll align-items-center col" >
+
+                <!-- 1. Cursos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Cursos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Planeamiento</a></li>
+                        <li><a class="dropdown-item" href="#">Operaciones</a></li>
+                        <li><a class="dropdown-item" href="#">Seguridad</a></li>
+                        <li><a class="dropdown-item" href="#">Costos</a></li>
+                        <li><a class="dropdown-item" href="#">Contabilidad</a></li>
+                        <li><a class="dropdown-item" href="#">Finanzas</a></li>
+                        <li><a class="dropdown-item" href="#">Geomecánica</a></li>
+                        <li><a class="dropdown-item" href="#">Geología</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Más vendidos</a></li>
+                    </ul>
+                </li>
+
+                <!-- 2. Contáctanos -->
+                <li class="nav-item">
+                    <a class="nav-link active">Contáctanos</a>
+                </li>
+
+                <!-- 2. Compras -->
+                <li class="submenu">
+                    <form class="d-flex">
+                        <button class="btn btn-outline-light" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-cart3" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg>
+                            Compras
+                            <span class="badge bg-light text-dark ms-1 rounded-pill" id="carrito-elementos">0</span>
+
+                        </button>
+                    </form>
+
+                    <div id="carrito">
+
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="container">
+        <h1 class="text-center text-primary">Refuerza tus conocimientos...</h1>
+    </div>
+
+
+    <div class="card-group m-5">
+
+        <div class="card1 card m-1">
+            <img src="./img/planing.png" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+
+                <h5 class="card1 card-title text-break fs-4 fw-bold text-primary">Planeamiento</h5>
+                <p class=" card11 card-text">Domina el curso con expertos en la materia.</p>
+            </div>
+            <div class="card-footer d-flex flex-column">
+                <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                    <!-- Product price-->
+                    <span class="badge bg-danger">30% de descuento</span>
+                </div>
+                <button id="btn-compra spinner-grow" onclick="agregarAlCarrito(0)" type="button"
+                    class="btn btn-primary mx-auto m-2">Comprar</button>
+
+
+
+            </div>
+        </div>
+
+        <div class="card2 card m-1">
+            <img src="./img/operations.png" class="card-img-top img-fluid" alt="...">
+            <div class="card-body card-cc">
+                <h5 class="card-title  fw-bold text-primary">Operaciones</h5>
+                <p class="card-text">Domina el curso con expertos en la materia.</p>
+            </div>
+            <div class="card-footer d-flex flex-column">
+                <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                    <!-- Product price-->
+                    <span class="badge bg-danger">30% de descuento</span>
+                </div>
+                <button onclick="agregarAlCarrito(1)" type="button" class="btn btn-primary mx-auto m-2">Comprar</button>
+
+
+
+            </div>
+        </div>
+
+        <div class="card3 card m-1">
+            <img src="./img/safety.png" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-break fs-4 fw-bold text-primary">Seguridad</h5>
+                <p class="card-text">Domina el curso con expertos en la materia.</p>
+            </div>
+            <div class="card-footer d-flex flex-column">
+                <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                    <!-- Product price-->
+                    <span class="badge bg-danger">30% de descuento</span>
+                </div>
+                <button onclick="agregarAlCarrito (2)" type="button"
+                    class="btn btn-primary mx-auto m-2">Comprar</button>
+
+
+
+            </div>
+        </div>
+
+        <div class="card4 card m-1">
+            <img src="./img/costs.png" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-break fs-4 fw-bold text-primary">Costos</h5>
+                <p class="card-text">Domina el curso con expertos en la materia.</p>
+            </div>
+            <div class="card-footer d-flex flex-column">
+                <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                    <!-- Product price-->
+                    <span class="badge bg-danger">30% de descuento</span>
+                </div>
+                <button onclick="agregarAlCarrito (3)" type="button"
+                    class="btn btn-primary mx-auto m-2">Comprar</button>
+
+
+
+            </div>
+        </div>
+
+        <div class="card5 card m-1">
+            <img src="./img/contabilidad.png" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-break fs-4 fw-bold text-primary">Contabilidad</h5>
+                <p class="card-text">Domina el curso con expertos en la materia.</p>
+            </div>
+            <div class="card-footer d-flex flex-column">
+                <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                    <!-- Product price-->
+                    <span class="badge bg-danger">30% de descuento</span>
+                </div>
+                <button onclick="agregarAlCarrito (4)" type="button"
+                    class="btn btn-primary mx-auto m-2">Comprar</button>
+
+
+
+            </div>
+        </div>
+
+        <div class="card6 card m-1">
+            <img src="./img/finanzas.png" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-break fs-4 fw-bold text-primary">Finanzas</h5>
+                <p class="card-text">Domina el curso con expertos en la materia.</p>
+            </div>
+            <div class="card-footer d-flex flex-column">
+                <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                    <!-- Product price-->
+                    <span class="badge bg-danger">30% de descuento</span>
+                </div>
+                <button onclick="agregarAlCarrito (5)" type="button"
+                    class="btn btn-primary mx-auto m-2">Comprar</button>
+
+
+
+            </div>
+        </div>
+
+        <div class="card7 card m-1">
+            <img src="./img/geomecanica.png" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-break fs-4 fw-bold text-primary">Geomecánica</h5>
+                <p class="card-text">Domina el curso con expertos en la materia.</p>
+            </div>
+            <div class="card-footer d-flex flex-column">
+                <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                    <!-- Product price-->
+                    <span class="badge bg-danger">30% de descuento</span>
+                </div>
+                <button onclick="agregarAlCarrito (6)" type="button"
+                    class="btn btn-primary mx-auto m-2">Comprar</button>
+
+
+
+            </div>
+        </div>
+
+        <div class="card8 card m-1">
+            <img src="./img/geologia.png" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-break fs-4 fw-bold text-primary">Geología</h5>
+                <p class="card-text">Domina el curso con expertos en la materia.</p>
+            </div>
+            <div class="card-footer d-flex flex-column">
+                <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                    <!-- Product price-->
+                    <span class="badge bg-danger">30% de descuento</span>
+                </div>
+                <button onclick="agregarAlCarrito (7)" type="button"
+                    class="btn btn-primary mx-auto m-2">Comprar</button>
+
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <footer class="footer d-flex">
+        <div id="btn-mensaje" class="fw-bolder text-center alert alert-primary mx-auto" role="alert">
+            ...
+
+        </div>
+
+        <div id="lista" class="fw-bolder text-center alert alert-primary mx-auto" role="alert">
+            ...
+
+        </div class="container">
+        <button id="borra" onclick="oferta ()" type="button"
+            class="text-center alert mx-auto bg-secondary text-light aaaa" role="alert">Ver oferta</button>
+        <button id="vacearCarrito" onclick="borrar ()" type="button"
+            class="text-center alert mx-auto bg-danger text-light" role="alert">Eliminar
+            compra</button>
+    </footer>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="./main.js"></script>
+
+    <!-- script de librería toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="./practica-dom.js"></script>
+</body>
+
+</html>
