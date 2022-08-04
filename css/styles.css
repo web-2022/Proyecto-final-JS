@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* Formato */
+
 .logo {
     height: 10vh;
 }
@@ -11,6 +13,35 @@
 .encabezado {
     height: 15vh;
 }
+
+.contenido {
+    margin: 17vh 0 0;
+}
+
+.u-full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.u-pull-right {
+    float: right;
+}
+
+.columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.card-cc h5 {
+
+    font-size: 23px;
+
+}
+
+
+/* Carrito */
+
 .submenu {
     position: relative;
 }
@@ -40,47 +71,12 @@
     display: block;
     position: absolute;
     right: 0;
-
     top: 100%;
     z-index: 1;
     background-color: white;
     padding: 20px;
     min-height: 400px;
     min-width: 300px;
-}
-
-
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width {
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.u-pull-right {
-    float: right;
-}
-
-
-
-/*---otros.*/
-
-.columns {
-    width: 100%;
-    float: left;
-    box-sizing: border-box;
-}
-
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-
-
-.card-cc h5{
-    
-    font-size: 23px;
-    
 }
 
 
@@ -93,6 +89,13 @@
         flex-direction: column;
     }
 
+    .footer div {
+        height: 5vh;
+    }
+
+    .footer button {
+        height: 5vh;
+    }
+
 
 }
-

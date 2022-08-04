@@ -7,9 +7,8 @@
     <title>Incorporando librerías</title>
 
     <!-- SEO -->
-  <meta name="keywords" content="Capacitación, minería, cursos">
-  <meta name="description" content="Empresa de capacitación para potenciar tus conocimientos">
-
+    <meta name="keywords" content="Capacitación, minería, cursos">
+    <meta name="description" content="Empresa de capacitación para potenciar tus conocimientos">
 
     <!-- estilos bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -25,24 +24,22 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
     <!-- Icono-logo -->
-  <link rel="shortcut icon" href="./img/logo.jpg">
+    <link rel="shortcut icon" href="./img/logo.jpg">
 
 </head>
 
 <body>
-
-
+    <!-- header -->
     <div class="row container-fluid">
 
-        <!-- II. Menú agrupado -->
-        <div class="navbar navbar-expand-lg navbar-dark bg-primary">
-
+        
+        <div class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <!-- I. Logo -->
             <div class="col">
                 <img class="logo" src="./img/logo.png" alt="">
             </div>
             <!-- II. Menú agrupado -->
-            <ul class="navbar-nav navbar-nav-scroll align-items-center col" >
+            <ul class="navbar-nav navbar-nav-scroll align-items-center col">
 
                 <!-- 1. Cursos -->
                 <li class="nav-item dropdown">
@@ -106,198 +103,177 @@
                 </li>
 
             </ul>
-
         </div>
-
 
     </div>
+       <!-- body -->
 
-
-
-
-
-
-    <div class="container">
-        <h1 class="text-center text-primary">Refuerza tus conocimientos...</h1>
-    </div>
-
-
-    <div class="card-group m-5">
-
-        <div class="card1 card m-1">
-            <img src="./img/planing.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-
-                <h5 class="card1 card-title text-break fs-4 fw-bold text-primary">Planeamiento</h5>
-                <p class=" card11 card-text">Domina el curso con expertos en la materia.</p>
-            </div>
-            <div class="card-footer d-flex flex-column">
-                <div class="text-center">
-                    <!-- Product name-->
-                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
-                    <!-- Product price-->
-                    <span class="badge bg-danger">30% de descuento</span>
-                </div>
-                <button id="btn-compra spinner-grow" onclick="agregarAlCarrito(0)" type="button"
-                    class="btn btn-primary mx-auto m-2">Comprar</button>
-
-
-
-            </div>
+    <div class="contenido">
+        <div class="container">
+            <h1 class="text-center text-primary">Refuerza tus conocimientos...</h1>
         </div>
-
-        <div class="card2 card m-1">
-            <img src="./img/operations.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body card-cc">
-                <h5 class="card-title  fw-bold text-primary">Operaciones</h5>
-                <p class="card-text">Domina el curso con expertos en la materia.</p>
-            </div>
-            <div class="card-footer d-flex flex-column">
-                <div class="text-center">
-                    <!-- Product name-->
-                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
-                    <!-- Product price-->
-                    <span class="badge bg-danger">30% de descuento</span>
+    
+        <div class="card-group m-5">
+    
+            <div class="card1 card m-1">
+                <img src="./img/planing.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+    
+                    <h5 class="card1 card-title text-break fs-4 fw-bold text-primary">Planeamiento</h5>
+                    <p class=" card11 card-text">Domina el curso con expertos en la materia.</p>
                 </div>
-                <button onclick="agregarAlCarrito(1)" type="button" class="btn btn-primary mx-auto m-2">Comprar</button>
-
-
-
-            </div>
-        </div>
-
-        <div class="card3 card m-1">
-            <img src="./img/safety.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-                <h5 class="card-title text-break fs-4 fw-bold text-primary">Seguridad</h5>
-                <p class="card-text">Domina el curso con expertos en la materia.</p>
-            </div>
-            <div class="card-footer d-flex flex-column">
-                <div class="text-center">
-                    <!-- Product name-->
-                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
-                    <!-- Product price-->
-                    <span class="badge bg-danger">30% de descuento</span>
+                <div class="card-footer d-flex flex-column">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <!-- Product price-->
+                        <span class="badge bg-danger">30% de descuento</span>
+                    </div>
+                    <button id="btn-compra spinner-grow" onclick="agregarAlCarrito(0)" type="button"
+                        class="btn btn-primary mx-auto m-2">Comprar</button>
+    
                 </div>
-                <button onclick="agregarAlCarrito (2)" type="button"
-                    class="btn btn-primary mx-auto m-2">Comprar</button>
-
-
-
             </div>
-        </div>
-
-        <div class="card4 card m-1">
-            <img src="./img/costs.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-                <h5 class="card-title text-break fs-4 fw-bold text-primary">Costos</h5>
-                <p class="card-text">Domina el curso con expertos en la materia.</p>
-            </div>
-            <div class="card-footer d-flex flex-column">
-                <div class="text-center">
-                    <!-- Product name-->
-                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
-                    <!-- Product price-->
-                    <span class="badge bg-danger">30% de descuento</span>
+    
+            <div class="card2 card m-1">
+                <img src="./img/operations.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body card-cc">
+                    <h5 class="card-title  fw-bold text-primary">Operaciones</h5>
+                    <p class="card-text">Domina el curso con expertos en la materia.</p>
                 </div>
-                <button onclick="agregarAlCarrito (3)" type="button"
-                    class="btn btn-primary mx-auto m-2">Comprar</button>
-
-
-
-            </div>
-        </div>
-
-        <div class="card5 card m-1">
-            <img src="./img/contabilidad.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-                <h5 class="card-title text-break fs-4 fw-bold text-primary">Contabilidad</h5>
-                <p class="card-text">Domina el curso con expertos en la materia.</p>
-            </div>
-            <div class="card-footer d-flex flex-column">
-                <div class="text-center">
-                    <!-- Product name-->
-                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
-                    <!-- Product price-->
-                    <span class="badge bg-danger">30% de descuento</span>
+                <div class="card-footer d-flex flex-column">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <!-- Product price-->
+                        <span class="badge bg-danger">30% de descuento</span>
+                    </div>
+                    <button onclick="agregarAlCarrito(1)" type="button" class="btn btn-primary mx-auto m-2">Comprar</button>
+    
                 </div>
-                <button onclick="agregarAlCarrito (4)" type="button"
-                    class="btn btn-primary mx-auto m-2">Comprar</button>
-
-
-
             </div>
-        </div>
-
-        <div class="card6 card m-1">
-            <img src="./img/finanzas.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-                <h5 class="card-title text-break fs-4 fw-bold text-primary">Finanzas</h5>
-                <p class="card-text">Domina el curso con expertos en la materia.</p>
-            </div>
-            <div class="card-footer d-flex flex-column">
-                <div class="text-center">
-                    <!-- Product name-->
-                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
-                    <!-- Product price-->
-                    <span class="badge bg-danger">30% de descuento</span>
+    
+            <div class="card3 card m-1">
+                <img src="./img/safety.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-break fs-4 fw-bold text-primary">Seguridad</h5>
+                    <p class="card-text">Domina el curso con expertos en la materia.</p>
                 </div>
-                <button onclick="agregarAlCarrito (5)" type="button"
-                    class="btn btn-primary mx-auto m-2">Comprar</button>
-
-
-
-            </div>
-        </div>
-
-        <div class="card7 card m-1">
-            <img src="./img/geomecanica.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-                <h5 class="card-title text-break fs-4 fw-bold text-primary">Geomecánica</h5>
-                <p class="card-text">Domina el curso con expertos en la materia.</p>
-            </div>
-            <div class="card-footer d-flex flex-column">
-                <div class="text-center">
-                    <!-- Product name-->
-                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
-                    <!-- Product price-->
-                    <span class="badge bg-danger">30% de descuento</span>
+                <div class="card-footer d-flex flex-column">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <!-- Product price-->
+                        <span class="badge bg-danger">30% de descuento</span>
+                    </div>
+                    <button onclick="agregarAlCarrito (2)" type="button"
+                        class="btn btn-primary mx-auto m-2">Comprar</button>
+    
                 </div>
-                <button onclick="agregarAlCarrito (6)" type="button"
-                    class="btn btn-primary mx-auto m-2">Comprar</button>
-
-
-
             </div>
-        </div>
-
-        <div class="card8 card m-1">
-            <img src="./img/geologia.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-                <h5 class="card-title text-break fs-4 fw-bold text-primary">Geología</h5>
-                <p class="card-text">Domina el curso con expertos en la materia.</p>
-            </div>
-            <div class="card-footer d-flex flex-column">
-                <div class="text-center">
-                    <!-- Product name-->
-                    <h5 class="fw-bolder">Precio <br> 160 USD</h5>
-                    <!-- Product price-->
-                    <span class="badge bg-danger">30% de descuento</span>
+    
+            <div class="card4 card m-1">
+                <img src="./img/costs.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-break fs-4 fw-bold text-primary">Costos</h5>
+                    <p class="card-text">Domina el curso con expertos en la materia.</p>
                 </div>
-                <button onclick="agregarAlCarrito (7)" type="button"
-                    class="btn btn-primary mx-auto m-2">Comprar</button>
-
-
-
+                <div class="card-footer d-flex flex-column">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <!-- Product price-->
+                        <span class="badge bg-danger">30% de descuento</span>
+                    </div>
+                    <button onclick="agregarAlCarrito (3)" type="button"
+                        class="btn btn-primary mx-auto m-2">Comprar</button>
+    
+                </div>
             </div>
-
+    
+            <div class="card5 card m-1">
+                <img src="./img/contabilidad.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-break fs-4 fw-bold text-primary">Contabilidad</h5>
+                    <p class="card-text">Domina el curso con expertos en la materia.</p>
+                </div>
+                <div class="card-footer d-flex flex-column">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <!-- Product price-->
+                        <span class="badge bg-danger">30% de descuento</span>
+                    </div>
+                    <button onclick="agregarAlCarrito (4)" type="button"
+                        class="btn btn-primary mx-auto m-2">Comprar</button>
+    
+                </div>
+            </div>
+    
+            <div class="card6 card m-1">
+                <img src="./img/finanzas.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-break fs-4 fw-bold text-primary">Finanzas</h5>
+                    <p class="card-text">Domina el curso con expertos en la materia.</p>
+                </div>
+                <div class="card-footer d-flex flex-column">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <!-- Product price-->
+                        <span class="badge bg-danger">30% de descuento</span>
+                    </div>
+                    <button onclick="agregarAlCarrito (5)" type="button"
+                        class="btn btn-primary mx-auto m-2">Comprar</button>
+    
+                </div>
+            </div>
+    
+            <div class="card7 card m-1">
+                <img src="./img/geomecanica.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-break fs-4 fw-bold text-primary">Geomecánica</h5>
+                    <p class="card-text">Domina el curso con expertos en la materia.</p>
+                </div>
+                <div class="card-footer d-flex flex-column">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <!-- Product price-->
+                        <span class="badge bg-danger">30% de descuento</span>
+                    </div>
+                    <button onclick="agregarAlCarrito (6)" type="button"
+                        class="btn btn-primary mx-auto m-2">Comprar</button>
+    
+                </div>
+            </div>
+    
+            <div class="card8 card m-1">
+                <img src="./img/geologia.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-break fs-4 fw-bold text-primary">Geología</h5>
+                    <p class="card-text">Domina el curso con expertos en la materia.</p>
+                </div>
+                <div class="card-footer d-flex flex-column">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <!-- Product price-->
+                        <span class="badge bg-danger">30% de descuento</span>
+                    </div>
+                    <button onclick="agregarAlCarrito (7)" type="button"
+                        class="btn btn-primary mx-auto m-2">Comprar</button>
+    
+                </div>
+            </div>
+    
         </div>
-
-
 
     </div>
+    <!-- footer -->
 
-    <footer class="footer d-flex">
+
+    <footer class="footer d-flex fixed-bottom">
         <div id="btn-mensaje" class="fw-bolder text-center alert alert-primary mx-auto" role="alert">
             ...
 
@@ -317,19 +293,20 @@
     </div>
 
 
+    <!-- script boostrap-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-
-
+    
+    
+    <!-- Mi script -->
 
     <script src="./main.js"></script>
 
     <!-- script de librería toastify -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-
-    <script src="./practica-dom.js"></script>
+   
 </body>
 
 </html>
