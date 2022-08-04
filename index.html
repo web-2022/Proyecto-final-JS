@@ -32,7 +32,7 @@
     <!-- header -->
     <div class="row container-fluid">
 
-        
+
         <div class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <!-- I. Logo -->
             <div class="col">
@@ -106,19 +106,19 @@
         </div>
 
     </div>
-       <!-- body -->
+    <!-- body -->
 
     <div class="contenido">
         <div class="container">
             <h1 class="text-center text-primary">Refuerza tus conocimientos...</h1>
         </div>
-    
+
         <div class="card-group m-5">
-    
+
             <div class="card1 card m-1">
                 <img src="./img/planing.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
-    
+
                     <h5 class="card1 card-title text-break fs-4 fw-bold text-primary">Planeamiento</h5>
                     <p class=" card11 card-text">Domina el curso con expertos en la materia.</p>
                 </div>
@@ -131,10 +131,10 @@
                     </div>
                     <button id="btn-compra spinner-grow" onclick="agregarAlCarrito(0)" type="button"
                         class="btn btn-primary mx-auto m-2">Comprar</button>
-    
+
                 </div>
             </div>
-    
+
             <div class="card2 card m-1">
                 <img src="./img/operations.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body card-cc">
@@ -148,11 +148,12 @@
                         <!-- Product price-->
                         <span class="badge bg-danger">30% de descuento</span>
                     </div>
-                    <button onclick="agregarAlCarrito(1)" type="button" class="btn btn-primary mx-auto m-2">Comprar</button>
-    
+                    <button onclick="agregarAlCarrito(1)" type="button"
+                        class="btn btn-primary mx-auto m-2">Comprar</button>
+
                 </div>
             </div>
-    
+
             <div class="card3 card m-1">
                 <img src="./img/safety.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
@@ -168,10 +169,10 @@
                     </div>
                     <button onclick="agregarAlCarrito (2)" type="button"
                         class="btn btn-primary mx-auto m-2">Comprar</button>
-    
+
                 </div>
             </div>
-    
+
             <div class="card4 card m-1">
                 <img src="./img/costs.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
@@ -187,10 +188,10 @@
                     </div>
                     <button onclick="agregarAlCarrito (3)" type="button"
                         class="btn btn-primary mx-auto m-2">Comprar</button>
-    
+
                 </div>
             </div>
-    
+
             <div class="card5 card m-1">
                 <img src="./img/contabilidad.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
@@ -206,10 +207,10 @@
                     </div>
                     <button onclick="agregarAlCarrito (4)" type="button"
                         class="btn btn-primary mx-auto m-2">Comprar</button>
-    
+
                 </div>
             </div>
-    
+
             <div class="card6 card m-1">
                 <img src="./img/finanzas.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
@@ -225,10 +226,10 @@
                     </div>
                     <button onclick="agregarAlCarrito (5)" type="button"
                         class="btn btn-primary mx-auto m-2">Comprar</button>
-    
+
                 </div>
             </div>
-    
+
             <div class="card7 card m-1">
                 <img src="./img/geomecanica.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
@@ -244,10 +245,10 @@
                     </div>
                     <button onclick="agregarAlCarrito (6)" type="button"
                         class="btn btn-primary mx-auto m-2">Comprar</button>
-    
+
                 </div>
             </div>
-    
+
             <div class="card8 card m-1">
                 <img src="./img/geologia.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
@@ -263,31 +264,30 @@
                     </div>
                     <button onclick="agregarAlCarrito (7)" type="button"
                         class="btn btn-primary mx-auto m-2">Comprar</button>
-    
+
                 </div>
             </div>
-    
+
         </div>
 
     </div>
     <!-- footer -->
 
-
-    <footer class="footer d-flex fixed-bottom">
+    <footer class="footer container d-flex justify-content-between fixed-bottom">
         <div id="btn-mensaje" class="fw-bolder text-center alert alert-primary mx-auto" role="alert">
             ...
-
         </div>
 
-        <div id="lista" class="fw-bolder text-center alert alert-primary mx-auto" role="alert">
-            ...
-
-        </div class="container">
-        <button id="borra" onclick="oferta ()" type="button"
+        <div id="lista" class="fw-bolder text-center alert alert-primary mx-auto" role="alert"> ...
+        </div>
+        
+        <div class="botones-footer">
+            <button id="borra" onclick="oferta ()" type="button"
             class="text-center alert mx-auto bg-secondary text-light aaaa" role="alert">Ver oferta</button>
-        <button id="vacearCarrito" onclick="borrar ()" type="button"
-            class="text-center alert mx-auto bg-danger text-light" role="alert">Eliminar
-            compra</button>
+            <button id="vacearCarrito" onclick="borrar ()" type="button"
+            class="text-center alert mx-auto bg-danger text-light" role="alert">Eliminar compra</button>
+
+        </div>
     </footer>
 
     </div>
@@ -298,15 +298,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-    
-    
+
+
     <!-- Mi script -->
 
     <script src="./main.js"></script>
 
     <!-- script de librería toastify -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-   
+
 </body>
 
 </html>
