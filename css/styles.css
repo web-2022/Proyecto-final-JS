@@ -54,39 +54,24 @@
     display: block;
     position: absolute;
     right: 0;
-
     top: 100%;
     z-index: 1;
     background-color: white;
     padding: 20px;
     min-height: 400px;
     min-width: 300px;
-}
-
-.submenu #carritoo {
-    display: none;
-}
-
-.submenu:hover #carritoo {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    z-index: 1;
-    background-color: white;
-    padding: 20px;
-    min-height: 400px;
-    min-width: 300px;
+   
 }
 
 
 
 /* Aplicando media queries */
 
-@media (max-width:575px) {
+@media (max-width:992px) {
     .footer {
         display: flex;
         flex-direction: column;
+        
     }
 
     .footer div {
@@ -103,5 +88,21 @@
         
     }
 
+    .contenido {
+        padding: 0 0 18vh 0;
+        
+    }
 
+    #lista {
+        height: 8vh;
+        
+    }
+
+    
+
+
+
+
+
+   
 }
