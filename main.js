@@ -88,7 +88,7 @@ function agregarAlCarrito(id) {
     const [curso1, curso2, curso3, curso4, curso5, curso6, curso7, curso8] = cursos;
     if (id === 0) {
         document.getElementById('lista').innerHTML = curso1.descripción;
-        
+
 
     } else {
         if (id === 1) {
@@ -149,7 +149,7 @@ function agregarAlCarrito(id) {
 
 }
 
-//Elimino el último curso que deseaba comprar
+//Eliminó el último curso que deseaba comprar
 function borrar() {
     carrito.pop();
     document.getElementById('carrito-elementos').innerHTML = carrito.length;
@@ -199,3 +199,146 @@ function avisar() {
 
 
 
+
+//-------------Carrito-------------//
+
+// Variables
+const carritoo = document.querySelector('#carritoo');
+const listaCursos = document.querySelector('#Lista-cursos');
+const contenedorCarrito = document.querySelector('#lista-carrito tbody');
+const vaciarCarritoBtn = document.querySelector('#vaciar-carrito'); 
+
+let articulosCarrito = [];
+
+cargarEvenListener();
+// Se agrega el curso
+function cargarEvenListener() {
+    listaCursos.addEventListener('click', agregaCurso);
+
+    // Elimina cursos de carrito
+    carritoo.addEventListener('click', eliminarCurso);
+
+    //Vacear carrito
+    vaciarCarritoBtn.addEventListener('click', () => {
+        articulosCarrito = [];
+
+        limpiarHTML();
+        console.log('vaceando carrito...');
+    });
+
+}
+
+
+// Funciones
+function agregaCurso(e) {
+    e.preventDefault();
+    if (e.target.classList.contains('agregar-carrito')) {
+        const cursoSeleccionado = e.target.parentElement.parentElement;
+        // console.log(cursoSeleccionado);
+        leerDatosCurso(cursoSeleccionado);
+
+    }
+}
+
+
+// Lee el html y extrae informacion del curso
+function leerDatosCurso(curso) {
+    // console.log(curso)
+    // Crea un objeto con el contenido del curso actual
+    const infoCurso = {
+        imagen: curso.querySelector('img').src,
+        titulo: curso.querySelector('h5').textContent,
+        info: curso.querySelector('p').textContent,
+        precio: curso.querySelector('.precio span').textContent,
+        id: curso.querySelector('button').getAttribute('data-id'),
+        cantidad: 1,
+
+    }
+
+    //Revisa si un elemento ya existe en el carrito
+    const existe = articulosCarrito.some(curso => curso.id === infoCurso.id);
+    // console.log(existe);
+    if (existe) {
+        // Actualizamos cantidad
+        const cursos = articulosCarrito.map(curso => {
+            if (curso.id === infoCurso.id) {
+                curso.cantidad++; //retorna el objeto actualizado en cantidad
+                return curso;
+            } else {
+                return curso; // retorna el objeto con los cursos no duplicados
+            }
+        })
+
+
+    } else {
+
+        //Agrega elementos al arreglo de carrito
+        articulosCarrito = [...articulosCarrito, infoCurso];
+    }
+
+
+
+    // console.log(articulosCarrito);
+
+    carritoHTML();
+
+}
+
+//Elimina un curso
+function eliminarCurso (e) {
+    e.preventDefault();
+    if (e.target.classList.contains('borrar-curso')) {    
+        const cursoId = e.target.getAttribute('data-id');
+
+        //Elimina del arreglo de articulosCarrito por el data-id
+        articulosCarrito = articulosCarrito.filter( curso => curso.id !== cursoId)
+        console.log(articulosCarrito);
+
+        carritoHTML ();
+    }
+    
+}
+
+
+//Mostrar el carrito de compras en el HTML
+function carritoHTML() {
+    //Limpiar el HTML
+    limpiarHTML();
+
+    //Recorre el HTML y genera el HTML
+
+
+    articulosCarrito.forEach(curso => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+               <td>  
+                    <img src="${curso.imagen}" width=100>
+               </td>
+               <td>${curso.titulo}</td>
+               <td>${curso.precio}</td>
+               <td>${curso.cantidad} </td>
+               <td>
+                    <a href="#" class="borrar-curso" data-id="${curso.id}">X</a>
+               </td>
+          `;
+        //Agrega el HTML del carrito en el tbody
+        contenedorCarrito.appendChild(row);
+
+        // console.log(querySelector('.tbody'));
+    })
+
+
+   
+
+}
+
+
+ //Elimina los cursos del tbody
+ function limpiarHTML() {
+    //Forma lenta
+    // contenedorCarrito.innerHTML = "";
+    //optimizando la limpieza del HTML
+    while (contenedorCarrito.firstChild) {
+        contenedorCarrito.removeChild(contenedorCarrito.firstChild)
+    }
+}

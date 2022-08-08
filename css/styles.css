@@ -46,11 +46,11 @@
     position: relative;
 }
 
-.submenu #carrito {
+.submenu #carritoo {
     display: none;
 }
 
-.submenu:hover #carrito {
+.submenu:hover #carritoo {
     display: block;
     position: absolute;
     right: 0;
@@ -63,11 +63,11 @@
     min-width: 300px;
 }
 
-.submenu #carrito {
+.submenu #carritoo {
     display: none;
 }
 
-.submenu:hover #carrito {
+.submenu:hover #carritoo {
     display: block;
     position: absolute;
     right: 0;

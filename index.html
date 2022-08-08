@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Incorporando librerías</title>
+    <title>Proyecto Final</title>
 
     <!-- SEO -->
     <meta name="keywords" content="Capacitación, minería, cursos">
@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <!-- header -->
+        <!-- header -->
     <div class="row container-fluid">
 
 
@@ -65,13 +65,13 @@
 
                 <!-- 2. Contáctanos -->
                 <li class="nav-item">
-                    <a class="nav-link active">Contáctanos</a>
+                    <a class="nav-link active" href="#">Contáctanos</a>
                 </li>
 
                 <!-- 2. Compras -->
-                <li class="submenu">
+                <li class="submenu border border-light rounded-pill p-1">
                     <form class="d-flex">
-                        <button class="btn btn-outline-light" type="submit">
+                        <div class=" text-light" type="subm">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-cart3" viewBox="0 0 16 16">
                                 <path
@@ -80,10 +80,10 @@
                             Compras
                             <span class="badge bg-light text-dark ms-1 rounded-pill" id="carrito-elementos">0</span>
 
-                        </button>
+                        </div>
                     </form>
 
-                    <div id="carrito">
+                    <div id="carritoo">
 
                         <table id="lista-carrito" class="u-full-width">
                             <thead>
@@ -95,10 +95,10 @@
                                     <th></th>
                                 </tr>
                             </thead>
-                            <tbody></tbody>
+                            <tbody class="tbody"></tbody>
                         </table>
 
-                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        <a href="#" id="vaciar-carrito" class="text-center btn btn-outline-secondary d-flex justify-content-center m-5">Vaciar Carrito</a>
                     </div>
                 </li>
 
@@ -108,7 +108,7 @@
     </div>
     <!-- body -->
 
-    <div class="contenido">
+    <div id="Lista-cursos" class="contenido">
         <div class="container">
             <h1 class="text-center text-primary">Refuerza tus conocimientos...</h1>
         </div>
@@ -125,12 +125,12 @@
                 <div class="card-footer d-flex flex-column">
                     <div class="text-center">
                         <!-- Product name-->
-                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <h5 class="precio fw-bolder">Precio <span>160</span> USD</h5>
                         <!-- Product price-->
                         <span class="badge bg-danger">30% de descuento</span>
                     </div>
                     <button id="btn-compra spinner-grow" onclick="agregarAlCarrito(0)" type="button"
-                        class="btn btn-primary mx-auto m-2">Comprar</button>
+                        class="agregar-carrito btn btn-primary mx-auto m-2" data-id="1">Comprar</button>
 
                 </div>
             </div>
@@ -144,12 +144,12 @@
                 <div class="card-footer d-flex flex-column">
                     <div class="text-center">
                         <!-- Product name-->
-                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <h5 class="precio fw-bolder">Precio <span>160</span> USD</h5>
                         <!-- Product price-->
                         <span class="badge bg-danger">30% de descuento</span>
                     </div>
                     <button onclick="agregarAlCarrito(1)" type="button"
-                        class="btn btn-primary mx-auto m-2">Comprar</button>
+                        class="agregar-carrito btn btn-primary mx-auto m-2" data-id="2">Comprar</button>
 
                 </div>
             </div>
@@ -163,12 +163,12 @@
                 <div class="card-footer d-flex flex-column">
                     <div class="text-center">
                         <!-- Product name-->
-                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <h5 class="precio fw-bolder">Precio <span>160</span> USD</h5>
                         <!-- Product price-->
                         <span class="badge bg-danger">30% de descuento</span>
                     </div>
                     <button onclick="agregarAlCarrito (2)" type="button"
-                        class="btn btn-primary mx-auto m-2">Comprar</button>
+                        class="agregar-carrito btn btn-primary mx-auto m-2" data-id="3">Comprar</button>
 
                 </div>
             </div>
@@ -182,12 +182,11 @@
                 <div class="card-footer d-flex flex-column">
                     <div class="text-center">
                         <!-- Product name-->
-                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
-                        <!-- Product price-->
+                        <h5 class="precio fw-bolder">Precio <span>160</span> USD</h5>         <!-- Product price-->
                         <span class="badge bg-danger">30% de descuento</span>
                     </div>
                     <button onclick="agregarAlCarrito (3)" type="button"
-                        class="btn btn-primary mx-auto m-2">Comprar</button>
+                        class="agregar-carrito btn btn-primary mx-auto m-2" data-id="4">Comprar</button>
 
                 </div>
             </div>
@@ -201,12 +200,12 @@
                 <div class="card-footer d-flex flex-column">
                     <div class="text-center">
                         <!-- Product name-->
-                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <h5 class="precio fw-bolder">Precio <span>160</span> USD</h5>
                         <!-- Product price-->
                         <span class="badge bg-danger">30% de descuento</span>
                     </div>
                     <button onclick="agregarAlCarrito (4)" type="button"
-                        class="btn btn-primary mx-auto m-2">Comprar</button>
+                        class="agregar-carrito btn btn-primary mx-auto m-2" data-id="5">Comprar</button>
 
                 </div>
             </div>
@@ -220,12 +219,12 @@
                 <div class="card-footer d-flex flex-column">
                     <div class="text-center">
                         <!-- Product name-->
-                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <h5 class="precio fw-bolder">Precio <span>160</span> USD</h5>
                         <!-- Product price-->
                         <span class="badge bg-danger">30% de descuento</span>
                     </div>
                     <button onclick="agregarAlCarrito (5)" type="button"
-                        class="btn btn-primary mx-auto m-2">Comprar</button>
+                        class="agregar-carrito btn btn-primary mx-auto m-2" data-id="6">Comprar</button>
 
                 </div>
             </div>
@@ -239,12 +238,12 @@
                 <div class="card-footer d-flex flex-column">
                     <div class="text-center">
                         <!-- Product name-->
-                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <h5 class="precio fw-bolder">Precio <span>160</span> USD</h5>
                         <!-- Product price-->
                         <span class="badge bg-danger">30% de descuento</span>
                     </div>
                     <button onclick="agregarAlCarrito (6)" type="button"
-                        class="btn btn-primary mx-auto m-2">Comprar</button>
+                        class="agregar-carrito btn btn-primary mx-auto m-2" data-id="7">Comprar</button>
 
                 </div>
             </div>
@@ -252,18 +251,18 @@
             <div class="card8 card m-1">
                 <img src="./img/geologia.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title text-break fs-4 fw-bold text-primary">Geología</h5>
+                    <h5 class="curso card-title text-break fs-4 fw-bold text-primary">Geología</h5>
                     <p class="card-text">Domina el curso con expertos en la materia.</p>
                 </div>
                 <div class="card-footer d-flex flex-column">
                     <div class="text-center">
                         <!-- Product name-->
-                        <h5 class="fw-bolder">Precio <br> 160 USD</h5>
+                        <h5 class="precio fw-bolder">Precio <span>160</span> USD</h5>
                         <!-- Product price-->
                         <span class="badge bg-danger">30% de descuento</span>
                     </div>
                     <button onclick="agregarAlCarrito (7)" type="button"
-                        class="btn btn-primary mx-auto m-2">Comprar</button>
+                        class="agregar-carrito btn btn-primary mx-auto m-2" data-id="8">Comprar</button>
 
                 </div>
             </div>
@@ -304,7 +303,7 @@
 
     <script src="./main.js"></script>
 
-    <!-- script de librería toastify -->
+       <!-- script de librería toastify -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 </body>
